@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ClickKey110/test.git
+          username: ClickKey110
+          password: Xsh426429
+          basedir: ./basedir/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.105.37.149:8200/eureka,http://39.105.37.149:8201/eureka,http://39.105.37.149:8202/eureka
